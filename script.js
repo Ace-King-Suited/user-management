@@ -6,6 +6,7 @@ function fetchUser() {
       }
     })
     .then((data) => {
+      // Adding users to storage
       localStorage.setItem("users", JSON.stringify(data.results));
       const cardRow = document.getElementById("card-row");
 
